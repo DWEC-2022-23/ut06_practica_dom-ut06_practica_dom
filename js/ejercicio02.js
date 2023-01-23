@@ -1,20 +1,22 @@
 document.getElementById("boton").onclick = ()=>{
-    let a = document.getElementsByTagName("p");
-    let b = document.getElementById("boton").innerHTML;
+    var a = document.getElementsByTagName("p");
+    var b = document.getElementById("boton").innerHTML;
+    var c = document.getElementsByTagName("body");
 
-    if(b = "fondo claro"){
+    if(b == "fondo oscuro"){
 
-        for(let i=0;i<=a.length;i++){
-            a[i].style.color = "white";
-        }
+        /*for(let i=0;i<a.length;i++){
+            a[i].classList.add(".inverso");
+            //a[i].innerHTML =`<p class="inverso">parrafo ${i}.</p>`;
+        }  
+        document.body.style = ".inverso body";*/
+        //document.getElementById("boton").innerHTML = "fondo claro";
 
-        document.getElementById("boton").innerHTML = "fondo claro";
-        document.body.style.backgroundColor = "black";
     }
     else{
-        for(let i=0;i<=a.length;i++){
-            a[i].innerHTML =`<p class="inverso">parrafo ${i}.`;
-            a[i].style.color = "black";
+        for(let i=0;i<a.length;i++){
+            a[i].innerHTML =`<p class="normal">parrafo ${i}.</p>`;
         }  
+        document.getElementById("boton").innerHTML = "fondo oscuro";
     }
 }

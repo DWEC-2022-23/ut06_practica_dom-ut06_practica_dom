@@ -3,5 +3,12 @@
 }
 
 .inverso p{
-    background: white;
+    color: white;
+}
+
+.normal body{
+    background-color: white;
+}
+.normal p{
+    color: black;
 }
