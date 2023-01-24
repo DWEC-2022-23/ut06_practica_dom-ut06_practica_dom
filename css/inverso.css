@@ -1,14 +1,4 @@
-.inverso body{
+.inverso{
     background: black;
-}
-
-.inverso p{
     color: white;
-}
-
-.normal body{
-    background-color: white;
-}
-.normal p{
-    color: black;
 }
