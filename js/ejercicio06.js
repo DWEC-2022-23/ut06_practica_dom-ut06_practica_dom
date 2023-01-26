@@ -53,6 +53,7 @@ let addItemButton = "";
 
  function MostrarOcultarLista(){
   // Muestra u oculta la información de las cosas que son violeta (listDiv)
+  listDiv
  }
  function CambiarTextoLista(){
   //Modifica  el texto de la lista (descriptionP) con el valor del input (descriptionInput).
@@ -61,6 +62,11 @@ let addItemButton = "";
  function AñadirElemento(){
   //Añade un nuevo elemento a la lista con el valor del input (addItemInput). 
   //Recuerda que el elemento tendrá que tener sus botones de subir, bajar y borrar.
+    var a = document.getElementsByClassName("addItemInput")[0].value;
+    var b = document.createElement("li");
+    var c = document.getElementById("lista");
+    b.innerHTML = a;
+    c.appendChild(b);
  }
 
 
