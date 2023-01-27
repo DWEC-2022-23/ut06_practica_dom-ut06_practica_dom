@@ -7,7 +7,7 @@ const create = document.createElement("div");
 for(let i=0;i<h3.length;i++){
     h3[i].addEventListener("click",(e)=>{
         let texto = `Has elegido ${espaciado(e.target.innerHTML)} que se imparte en turno de ${e.target.parentNode.id}. Los nº de grupos que se imparten son 3: ${horario(e.target.nextElementSibling.innerHTML)}`;
-          p = document.createTextNode(texto);
+          let p = document.createTextNode(texto);
           create.appendChild(p);
 
           let inser = document.getElementsByTagName("lista")[3];
